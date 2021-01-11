@@ -4,12 +4,18 @@ def is_sorted(input):
             return False
     return True
 
+# LINEAR TIME COMPLEXITY
+# single for loop
+
 def bubble_sort(input):
     while not is_sorted(input):
         for i in range(len(input) - 1):
             if input[i] > input[i + 1]:
                 input[i], input[i + 1] = input[i + 1], input[i]
     return input
+
+# QUADRATIC TIME COMPLEXITY
+# single for loop, but nested inside of another linear function
 
 print(is_sorted([1, 4, 6, 3, 9]))
 #  => False
