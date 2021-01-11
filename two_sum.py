@@ -15,9 +15,11 @@ print(two_sum1([17, 8, 22, 1, 4, 6], 5))
 print(two_sum1([1, 8, 22, 3, 4, 5], 4))
 # => [0,3]
 print(two_sum1([1, 2, 3, 4, 5, 6], 40))
-# => []
+# => None
 
 # ALTERNATIVE ---------------------------------------------------
+
+# PROBLEM: This does not work because dictionary does not have property has_key (may be a Python 2 thing, as it came from Pete)
 
 def two_sum2(number_list, sum):
     intermediary = {}
