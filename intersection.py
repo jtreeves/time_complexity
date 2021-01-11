@@ -1,11 +1,25 @@
+# def intersection(first_list, second_list):
+#     overlap_list = []
+#     if len(first_list) == 0 or len(second_list) == 0:
+#         overlap_list = []
+#     else:
+#         for f in first_list:
+#             for s in second_list:
+#                 if f == s:
+#                     overlap_list.append(f)
+#     return overlap_list
+
+# QUADRATIC TIME COMLPEXITY
+# nested for loops
+
 def intersection(first_list, second_list):
     overlap_list = []
     if len(first_list) == 0 or len(second_list) == 0:
         overlap_list = []
     else:
         for f in first_list:
-            for s in second_list:
-                if f == s:
+            # for s in second_list:
+                if f in second_list:
                     overlap_list.append(f)
     return overlap_list
 
