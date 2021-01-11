@@ -57,3 +57,27 @@ print(intersection2([], [1,2,3]))
 # => []
 print(intersection2([], []))
 # => []
+
+# ALTERNATIVE APPROACH ------------------------------------------
+
+def intersection3(first_list, second_list):
+    first_set = set(first_list)
+    second_set = set(second_list)
+    return list(first_set and second_set)
+
+# LINEAR TIME COMPLEXITY USING SETS
+# parallel for loops (linear + linear = still linear)
+# more ideal
+
+print(intersection3([3,4], [1,2,3]))
+# => [3]
+print(intersection3([1,7,2,9,4,-3], [2,43,3,1,-100]))
+# => [1,2]
+print(intersection3([1,2,3,4], [4,3,2,1]))
+# => [1,2,3,4]
+print(intersection3([190,732,23,9,4,-3], [2,43,3,1,-100]))
+# => []
+print(intersection3([], [1,2,3]))
+# => []
+print(intersection3([], []))
+# => []
