@@ -63,11 +63,11 @@ print(intersection2([], []))
 def intersection3(first_list, second_list):
     first_set = set(first_list)
     second_set = set(second_list)
-    return list(first_set and second_set)
+    return list(first_set & second_set)
 
 # LINEAR TIME COMPLEXITY USING SETS
-# parallel for loops (linear + linear = still linear)
-# more ideal
+# parallel sets (linear + linear = still linear)
+# more ideal and less code
 
 print(intersection3([3,4], [1,2,3]))
 # => [3]
